@@ -29,7 +29,16 @@ function App() {
 
   const Total = () => {
     let acum = 0;
-    selectProduct.map((p) => acum += p.precio * p.cantidad);
+    selectProduct.map((p) => {
+      console.log(p.descuento);
+      if (p.descuento === "") {
+        console.log('Soy sin descuento', p.descuento);
+        acum += p.precio * p.cantidad
+      } else {
+        console.log('con descuento', p.descuento);
+        acum += parseFloat(p.precio_oferta) * p.cantidad
+      }
+    });
     return acum;
   };
 
