@@ -66,7 +66,7 @@ export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
                     />
                   </div>
 
-                  <p>
+                  <p className="size">
                     <i
                       className="fa fa-trash"
                       aria-hidden="true"
