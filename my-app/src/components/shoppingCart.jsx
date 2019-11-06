@@ -115,6 +115,7 @@ export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
         Total = S/.
         {total()}
       </p>
+      
       <button type="button"
         className="button-pay"
         onClick={() => {
@@ -127,7 +128,7 @@ export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
 
         }}
         disabled={disableSubmitButton}>
-        <div  className="flex-class">
+        <div className="flex-class">
           <img className="img-size" src={Pin} alt="Icono car shop"></img>
           <div className="color-letter">
             <h3>Comprar online</h3>
@@ -135,6 +136,7 @@ export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
           </div>
         </div>
       </button>
+
       <button type="button"
         className="button-pay"
         onClick={() => {
@@ -147,7 +149,7 @@ export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
 
         }}
         disabled={disableSubmitButton}>
-        <div  className="flex-class">
+        <div className="flex-class">
           <img className="img-size" src={Car} alt="Icono car shop"></img>
           <div className="color-letter">
             <h3>Tiendas BELCORP</h3>
@@ -155,6 +157,7 @@ export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
           </div>
         </div>
       </button>
+
       <button type="button"
         className="button-pay"
         onClick={() => {
@@ -175,6 +178,7 @@ export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
           </div>
         </div>
       </button>
+
       <Stripe></Stripe>
     </div>
   );

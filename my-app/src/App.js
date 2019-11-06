@@ -102,7 +102,7 @@ function App() {
               });
               setOrder(newArray);
             }} />} />
-            <Route exact path='/places' component={Places} />
+            <Route path='/places' component={Places} />
         </Switch>
       </div>
 
