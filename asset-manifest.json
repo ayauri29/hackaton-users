@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/hackaton-users/static/css/main.746f469d.chunk.css",
-    "main.js": "/hackaton-users/static/js/main.bc238205.chunk.js",
-    "main.js.map": "/hackaton-users/static/js/main.bc238205.chunk.js.map",
+    "main.css": "/hackaton-users/static/css/main.9ace7fc1.chunk.css",
+    "main.js": "/hackaton-users/static/js/main.5e6ceaa7.chunk.js",
+    "main.js.map": "/hackaton-users/static/js/main.5e6ceaa7.chunk.js.map",
     "runtime-main.js": "/hackaton-users/static/js/runtime-main.ce75b071.js",
     "runtime-main.js.map": "/hackaton-users/static/js/runtime-main.ce75b071.js.map",
     "static/css/2.55521911.chunk.css": "/hackaton-users/static/css/2.55521911.chunk.css",
-    "static/js/2.62d6b620.chunk.js": "/hackaton-users/static/js/2.62d6b620.chunk.js",
-    "static/js/2.62d6b620.chunk.js.map": "/hackaton-users/static/js/2.62d6b620.chunk.js.map",
+    "static/js/2.e3d0e71f.chunk.js": "/hackaton-users/static/js/2.e3d0e71f.chunk.js",
+    "static/js/2.e3d0e71f.chunk.js.map": "/hackaton-users/static/js/2.e3d0e71f.chunk.js.map",
     "index.html": "/hackaton-users/index.html",
-    "precache-manifest.5b58a73052c7858148693d9d4cdfc7ed.js": "/hackaton-users/precache-manifest.5b58a73052c7858148693d9d4cdfc7ed.js",
+    "precache-manifest.d6bc79bdd2c1aa6db065f1f177f8801b.js": "/hackaton-users/precache-manifest.d6bc79bdd2c1aa6db065f1f177f8801b.js",
     "service-worker.js": "/hackaton-users/service-worker.js",
     "static/css/2.55521911.chunk.css.map": "/hackaton-users/static/css/2.55521911.chunk.css.map",
-    "static/css/main.746f469d.chunk.css.map": "/hackaton-users/static/css/main.746f469d.chunk.css.map",
-    "static/media/accesorios.svg": "/hackaton-users/static/media/accesorios.317c95cc.svg",
+    "static/css/main.9ace7fc1.chunk.css.map": "/hackaton-users/static/css/main.9ace7fc1.chunk.css.map",
+    "static/media/accesorios.svg": "/hackaton-users/static/media/accesorios.7a533aca.svg",
     "static/media/asesora.svg": "/hackaton-users/static/media/asesora.947c705e.svg",
-    "static/media/body.svg": "/hackaton-users/static/media/body.899d8dc8.svg",
-    "static/media/cuidado personal.svg": "/hackaton-users/static/media/cuidado personal.b8dd8234.svg",
-    "static/media/maquillaje.svg": "/hackaton-users/static/media/maquillaje.f6807af8.svg",
-    "static/media/perfume.svg": "/hackaton-users/static/media/perfume.024716d7.svg"
+    "static/media/body.svg": "/hackaton-users/static/media/body.d0baa9fd.svg",
+    "static/media/cuidadopersonal.svg": "/hackaton-users/static/media/cuidadopersonal.bbb6b57d.svg",
+    "static/media/maquillaje.svg": "/hackaton-users/static/media/maquillaje.24c382a5.svg",
+    "static/media/perfume.svg": "/hackaton-users/static/media/perfume.d88c5dd7.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ce75b071.js",
     "static/css/2.55521911.chunk.css",
-    "static/js/2.62d6b620.chunk.js",
-    "static/css/main.746f469d.chunk.css",
-    "static/js/main.bc238205.chunk.js"
+    "static/js/2.e3d0e71f.chunk.js",
+    "static/css/main.9ace7fc1.chunk.css",
+    "static/js/main.5e6ceaa7.chunk.js"
   ]
 }
