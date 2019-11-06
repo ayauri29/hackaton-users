@@ -21,6 +21,29 @@
   color: #09d3ac;
 }
 
-.table{
-  background: yellow;
+.flex {
+  display: flex;
+  flex-direction: column;
+  margin: 10%;
+}
+ .pedidos{
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  border-bottom: 0.5px solid #ada7a8;
+    padding: 10px 0px;
+ }
+
+ .img-order{
+  height: 120px;
+}
+.fontDesc{
+  font-size: 14px;
+  color: red;
+}
+.fontp{
+  font-size: 13px;
+}
+.fontp2{
+  font-size: 14px;
 }
