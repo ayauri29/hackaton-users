@@ -41,11 +41,11 @@ export const Products = ({ addProductAtOrder }) => {
           return (
             <div key={product.id} className="product-div">
               <img className="img-product" src={product.img} alt="imagen del producto" />
-              <p>{product.producto}</p>
+              <p className="p-name">{product.producto}</p>
               <p>{product.categoria}</p>
               <p className="precio">S/.{product.precio}</p>
               <p className="descuento">Dsct: {product.descuento}</p>
-              <p>S/.{product.precio_oferta}</p>
+              <p className="precio-final">S/.{product.precio_oferta}</p>
               <button type="button" className="btn-add" onClick={() => addProductAtOrder(product)}>AGREGAR</button>
             </div>
           );
@@ -53,14 +53,13 @@ export const Products = ({ addProductAtOrder }) => {
           return (
             <div key={product.id} className="product-div">
               <img className="img-product" src={product.img} alt="imagen del producto" />
-              <p>{product.producto}</p>
+              <p className="p-name">{product.producto}</p>
               <p>{product.categoria}</p>
               <p>S/.{product.precio}</p>
               <button type="button" className="btn-add" onClick={() => addProductAtOrder(product)}>AGREGAR</button>
             </div>
           )
         }
-
       })}
     </div>
   );

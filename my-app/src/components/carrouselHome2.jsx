@@ -8,7 +8,7 @@ const slideImages = [
 ];
 
 const properties = {
-  duration: 5000,
+  duration: 1000,
   transitionDuration: 500,
   infinite: true,
   indicators: true,
@@ -24,17 +24,17 @@ export const SlideCampania = () => {
         <Slide {...properties}>
           <div className="each-slide-camp">
             <div style={{'backgroundImage': `url(${slideImages[0]})`}}></div>
-            <p className="p-center">COSMÉTICOS</p>
+            <p className="p-center bold">COSMÉTICOS</p>
             <p className="p-center">Polvos compactos</p>
           </div>
           <div className="each-slide-camp">
             <div style={{'backgroundImage': `url(${slideImages[1]})`}}></div>
-            <p className="p-center">FRAGANCIAS</p>
+            <p className="p-center bold">FRAGANCIAS</p>
             <p className="p-center">Polvos compactos</p>
           </div>
           <div className="each-slide-camp">
             <div style={{'backgroundImage': `url(${slideImages[2]})`}}></div>
-            <p className="p-center">FRAGANCIAS</p>
+            <p className="p-center bold">FRAGANCIAS</p>
             <p className="p-center">Polvos compactos</p>
           </div>
         </Slide>
