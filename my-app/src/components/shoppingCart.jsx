@@ -1,13 +1,12 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
-import firebase from 'firebase/app';
-import { Stripe } from '../components/stripe'
-import 'firebase/firestore';
-import {Pay} from './pay';
+import React from "react";
+import firebase from "firebase/app";
+import { Stripe } from "../components/stripe";
+import "firebase/firestore";
+// import {Pay} from './pay';
+import "../App.css";
 
-export const AddOrder = ({
-  products, cantidad, total, deleteRow, order,
-}) => {
+export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
   /* const [name, setName] = useState('');
   const [mesa, setMesa] = useState(''); */
 
@@ -17,24 +16,25 @@ export const AddOrder = ({
   const functionMesa = (e) => {
     setMesa(e.target.value);
   }; */
-  const addOrder = (product, date, estado, total) => firebase
-    .firestore()
-    .collection('order')
-    .add({
-      product,
-      date,
-      total,
-    });
+  const addOrder = (product, date, estado, total) =>
+    firebase
+      .firestore()
+      .collection("order")
+      .add({
+        product,
+        date,
+        total,
+      });
 
-  const validateOrder = () => {
-    return products.length > 0;
-  };
+  // const validateOrder = () => {
+  //   return products.length > 0;
+  // };
 
-  const disableSubmitButton = !validateOrder();
+  // const disableSubmitButton = !validateOrder();
 
   return (
     <div className="Order">
-      <h2>PEDIDO</h2>
+      <h2>Carro de compras</h2>
       {/* <p>{Date(Date.now()).toString()}</p> */}
       {/* <div>
         <label>
@@ -49,46 +49,17 @@ export const AddOrder = ({
           <input placeholder="N° de Mesa" value={mesa} onChange={functionMesa} />
         </label>
       </div> */}
-      <table className="">
-        <thead>
-          <tr>
-            <th colSpan="5">DETALLE DE PEDIDO</th>
-          </tr>
-          <tr>
-            <td>CANT.</td>
-            <td>DESCRIPCIÓN</td>
-            <td>IMAGEN</td>
-            <td>PU</td>
-            <td>SUBTOTAL</td>
-            <td>BORRAR</td>
-          </tr>
-        </thead>
-        <tbody>
-          {products.map((product) => (
-            <tr key={product.id}>
-              <td>
-                <input
-                  type="number"
-                  min="1"
-                  max="100"
-                  defaultValue={product.cantidad}
-                  onClick={(e) => {
-                    const p = e.target.value;
-                    cantidad(product.id, p);
-                  }}
-                />
-              </td>
-              <td><img className="img-order" src={product.img} alt="imagen del producto"/></td>
-              <td>{product.nombre}</td>
-              <td>
-                S/.
-                {product.precio}
-              </td>
-              <td>
-                S/.
-                {product.precio * product.cantidad}
-              </td>
-              <td>
+      <div>
+        <div>
+          {products.map(product => (
+            <div key={product.id}>             
+              <img className="img-order" src={product.img} alt="imagen del producto" />
+              <div className="second">
+              <p>{product.categoria}</p>
+              <p>{product.producto}</p>
+              <p>Precio: S/.{product.precio}
+              </p>
+              <p>
                 <i
                   className="fa fa-minus-circle"
                   aria-hidden="true"
@@ -96,12 +67,23 @@ export const AddOrder = ({
                     deleteRow(product);
                   }}
                 />
-              </td>
-            </tr>
+              </p>             
+              </div>
+              <input className="tres"
+                type="number"
+                min="1"
+                max="100"
+                defaultValue={product.cantidad}
+                onClick={e => {
+                  const p = e.target.value;
+                  cantidad(product.id, p);
+                }}
+              />
+            <p>S/.{product.precio * product.cantidad}</p>
+            </div>
           ))}
-        </tbody>
-
-      </table>
+        </div>
+      </div>
       <p className="Total">
         Total = S/.
         {total()}
