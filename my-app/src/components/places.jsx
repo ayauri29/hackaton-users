@@ -1,8 +1,8 @@
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
+import { GoogleApiWrapper } from 'google-maps-react';
 import React, { Component } from 'react';
 import { Belcenter } from '../components/belcenter';
 
-export class MapContainer extends Component {
+class MapContainer extends Component {
     render() {
         return (
             <div>
