@@ -21,6 +21,16 @@
   color: #09d3ac;
 }
 
-.table{
-  background: yellow;
+.flex {
+  display: flex;
+  flex-direction: column;
+  margin: 10%;
+}
+ .pedidos{
+  display: flex;
+  align-items: flex-end;
+ }
+
+ .img-order{
+  height: 120px;
 }

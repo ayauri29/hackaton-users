@@ -33,26 +33,12 @@ export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
   // const disableSubmitButton = !validateOrder();
 
   return (
-    <div className="Order">
+    <div className="flex">
       <h2>Carro de compras</h2>
-      {/* <p>{Date(Date.now()).toString()}</p> */}
-      {/* <div>
-        <label>
-          Cliente:
-          {' '}
-          <input placeholder="Nombre" value={name} onChange={functionName} />
-        </label>
-        <br />
-        <label>
-          N° Mesa:
-          {' '}
-          <input placeholder="N° de Mesa" value={mesa} onChange={functionMesa} />
-        </label>
-      </div> */}
-      <div>
+      <div >
         <div>
           {products.map(product => (
-            <div key={product.id}>             
+            <div className="pedido" key={product.id} >             
               <img className="img-order" src={product.img} alt="imagen del producto" />
               <div className="second">
               <p>{product.categoria}</p>
@@ -79,7 +65,6 @@ export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
                   cantidad(product.id, p);
                 }}
               />
-            <p>S/.{product.precio * product.cantidad}</p>
             </div>
           ))}
         </div>
