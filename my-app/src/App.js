@@ -8,6 +8,7 @@ import ResponsiveMenu from 'react-responsive-navbar';
 import { FaBars } from 'react-icons/fa';
 import { IoMdClose, IoMdSearch, IoIosHeartEmpty } from "react-icons/io";
 import Logo from './logo.png';
+import Places from './components/places';
 
 
 function App() {
@@ -28,7 +29,16 @@ function App() {
 
   const Total = () => {
     let acum = 0;
-    selectProduct.map((p) => acum += p.precio * p.cantidad);
+    selectProduct.map((p) => {
+      console.log(p.descuento);
+      if (p.descuento === "") {
+        console.log('Soy sin descuento', p.descuento);
+        acum += p.precio * p.cantidad
+      } else {
+        console.log('con descuento', p.descuento);
+        acum += parseFloat(p.precio_oferta) * p.cantidad
+      }
+    });
     return acum;
   };
 
@@ -48,6 +58,7 @@ function App() {
                 <li><Link to={'/'} className="nav-link"> Home </Link></li>
                 <li><Link to={'/products'} className="nav-link">Productos</Link></li>
                 <li><Link to={'/shopping'} className="nav-link">Carrito</Link></li>
+                <li><Link to={'/places'} className="nav-link">Places</Link></li>
               </ul>
             }
           />
@@ -90,6 +101,7 @@ function App() {
               });
               setOrder(newArray);
             }} />} />
+            <Route exact path='/places' component={Places} />
         </Switch>
       </div>
 

@@ -37,36 +37,75 @@ export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
       <h2>Carro de compras</h2>
       <div >
         <div>
-          {products.map(product => (
-            <div className="pedido" key={product.id} >             
-              <img className="img-order" src={product.img} alt="imagen del producto" />
-              <div className="second">
-              <p>{product.categoria}</p>
-              <p>{product.producto}</p>
-              <p>Precio: S/.{product.precio}
-              </p>
-              <p>
-                <i
-                  className="fa fa-minus-circle"
-                  aria-hidden="true"
-                  onClick={() => {
-                    deleteRow(product);
-                  }}
-                />
-              </p>             
-              </div>
-              <input className="tres"
-                type="number"
-                min="1"
-                max="100"
-                defaultValue={product.cantidad}
-                onClick={e => {
-                  const p = e.target.value;
-                  cantidad(product.id, p);
-                }}
-              />
-            </div>
-          ))}
+          {products.map(product => {
+            if (product.descuento === "") {
+              return (
+                <div key={product.id}>
+                  <img className="img-order" src={product.img} alt="imagen del producto" />
+                  <div className="second">
+                    <p>{product.categoria}</p>
+                    <p>{product.producto}</p>
+                    <p>Precio: S/.{product.precio}
+                    </p>
+                    <p>
+                      <i
+                        className="fa fa-minus-circle"
+                        aria-hidden="true"
+                        onClick={() => {
+                          deleteRow(product);
+                        }}
+                      />
+                    </p>
+                  </div>
+                  <input className="tres"
+                    type="number"
+                    min="1"
+                    max="100"
+                    defaultValue={product.cantidad}
+                    onClick={e => {
+                      const p = e.target.value;
+                      cantidad(product.id, p);
+                    }}
+                  />
+                  <p>S/.{product.precio * product.cantidad}</p>
+                </div>
+              )
+            } else {
+              return (
+                <div key={product.id}>
+                  <img className="img-order" src={product.img} alt="imagen del producto" />
+                  <div className="second">
+                    <p>{product.categoria}</p>
+                    <p>{product.producto}</p>
+                    <p>Precio: S/.{product.precio}</p>
+                    <p>Descuento: S/.{product.descuento}</p>
+                    <p>Precio final: S/.{product.precio_oferta}</p>
+                    <p>
+                      <i
+                        className="fa fa-minus-circle"
+                        aria-hidden="true"
+                        onClick={() => {
+                          deleteRow(product);
+                        }}
+                      />
+                    </p>
+                  </div>
+                  <input className="tres"
+                    type="number"
+                    min="1"
+                    max="100"
+                    defaultValue={product.cantidad}
+                    onClick={e => {
+                      const p = e.target.value;
+                      cantidad(product.id, p);
+                    }}
+                  />
+                  <p>S/.{parseFloat(product.precio_oferta) * product.cantidad}</p>
+                </div>
+              )
+            }
+
+          })}
         </div>
       </div>
       <p className="Total">
