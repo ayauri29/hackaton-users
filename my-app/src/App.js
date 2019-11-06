@@ -8,6 +8,7 @@ import ResponsiveMenu from 'react-responsive-navbar';
 import { FaBars } from 'react-icons/fa';
 import { IoMdClose, IoMdSearch, IoIosHeartEmpty } from "react-icons/io";
 import Logo from './logo.png';
+import Places from './components/places';
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
                 <li><Link to={'/'} className="nav-link"> Home </Link></li>
                 <li><Link to={'/products'} className="nav-link">Productos</Link></li>
                 <li><Link to={'/shopping'} className="nav-link">Carrito</Link></li>
+                <li><Link to={'/places'} className="nav-link">Places</Link></li>
               </ul>
             }
           />
@@ -90,6 +92,7 @@ function App() {
               });
               setOrder(newArray);
             }} />} />
+            <Route exact path='/places' component={Places} />
         </Switch>
       </div>
 

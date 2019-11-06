@@ -16,6 +16,10 @@ input[type=number]::-webkit-outer-spin-button {
    opacity: 1;
 
 }
+p{
+  margin: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -51,17 +55,18 @@ li a:hover {
 }
 .btn-add{
   background: #B9007E;
-    color: #fff;
-    font-family: GiorgioSans-Medium;
-    padding: 6px 20px;
-    font-size: 15px;
-    letter-spacing: 1px;
-    line-height: inherit;
-    border: none;
-    border-radius: 10px;
-    width: 300px;
-    height: 40px;
-    margin: 8%
+  color: #fff;
+  font-family: GiorgioSans-Medium;
+  padding: 6px 20px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: inherit;
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 60px;
+  margin: 8%;
+  font-weight: bold;
 }
 header{
   height: 15%;
@@ -125,8 +130,9 @@ h3 {
 }
 .div-products{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
 }
 .precio{
   text-decoration:line-through;
@@ -137,21 +143,64 @@ h3 {
 .saludo{
   align-items: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-size: 15px;
+  margin-top: 3%;
 }
 .icon-asesor{
   height: 40px;
 }
 h2{
   font-size: 20px;
-  text-align: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 .p-center{
   text-align: center;
 }
 .img-order{
   height: 50px;
+}
+.btn-home{
+  background: #B9007E;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    padding: 6px 20px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: inherit;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    margin: 8%;
+    font-weight: bold;
+}
+.product-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: groove;
+  border-color: #cccccc24;
+  margin: 2% 5% 2% 5%;
+}
+.icon-filter{
+  height: 50px;
+}
+.button-filter{
+  background-color: white;
+    /* outline: none; */
+    border: none;
+}
+.group-button{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+.slide-group{
+  display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 @media screen and (min-width: 764px) {
   .each-slide > div {
