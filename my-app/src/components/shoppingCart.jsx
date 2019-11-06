@@ -1,10 +1,13 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, {Link} from "react";
 import firebase from "firebase/app";
 import { Stripe } from "../components/stripe";
 import "firebase/firestore";
 // import {Pay} from './pay';
 import "../App.css";
+import {Payment} from '../components/payments';
+
+
 
 export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
   /* const [name, setName] = useState('');
@@ -26,11 +29,11 @@ export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
         total,
       });
 
-  // const validateOrder = () => {
-  //   return products.length > 0;
-  // };
+  const validateOrder = () => {
+     return products.length > 0;
+  };
 
-  // const disableSubmitButton = !validateOrder();
+  const disableSubmitButton = !validateOrder();
 
   return (
     <div className="Order">
@@ -126,22 +129,23 @@ export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
         Total = S/.
         {total()}
       </p>
-      <Stripe></Stripe>
-      {/* <button
+      {/* <Stripe></Stripe> */}
+      <button
         type="button"
         className="Send"
-        onClick={() => {
+        onClick={ () => {
           if (!disableSubmitButton) {
             addOrder(products, new Date(), 'pendiente', total())
               .then(() => {
                 order([]);
               });
           }
+
         }}
         disabled={disableSubmitButton}
       >
         Carrito de compras
-      </button> */}
+      </button>
     </div>
   );
 };

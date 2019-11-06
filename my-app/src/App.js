@@ -9,6 +9,7 @@ import { FaBars } from 'react-icons/fa';
 import { IoMdClose, IoMdSearch, IoIosHeartEmpty } from "react-icons/io";
 import Logo from './logo.png';
 import Places from './components/places';
+import {Payment} from './components/payments';
 
 
 function App() {
@@ -68,10 +69,10 @@ function App() {
             <IoMdSearch size={30} color="Black" />
             <IoIosHeartEmpty size={30} color="Black" />
           </div>
-
         </header>
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route exact path='/payment' component={Payment} />
           <Route path='/products' component={() => <Products addProductAtOrder={(product) => {
             console.log(product);
             const found = selectProduct.find((p) => {
