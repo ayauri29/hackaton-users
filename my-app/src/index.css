@@ -1,0 +1,138 @@
+html, body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+#root{
+  height: 100%;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+.center{
+  display: flex;
+  align-items: center;
+}
+.img-product{
+  height: 200px;
+}
+.btn-add{
+  background: #B9007E;
+    color: #fff;
+    font-family: GiorgioSans-Medium;
+    padding: 6px 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: inherit;
+    border: none;
+}
+header{
+  height: 15%;
+  display: flex;
+  margin: 10% 0% 10% 0%;
+  justify-content: space-around;
+}
+.logo{
+  height: 50px;
+}
+.slide-container {
+  width: 90%;
+  margin: auto; }
+
+h3 {
+  text-align: center; }
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 100px;
+}
+
+.each-slide-camp > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 400px;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+.each-fade {
+  display: flex;
+}
+
+.each-fade .image-container {
+  width: 75%;
+  overflow: hidden;
+}
+
+.each-fade .image-container img {
+  width: 100%;
+}
+
+.each-fade h2 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: #adceed;
+}
+.div-products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.precio{
+  text-decoration:line-through;
+}
+.descuento{
+  color: red;
+}
+.saludo{
+  display: flex;
+  align-items: center;
+}
+.icon-asesor{
+  height: 80px;
+}
+@media screen and (min-width: 764px) {
+  .each-slide > div {
+    height: 300px;
+  }
+}
