@@ -11,7 +11,7 @@ export const Home = () => {
             <Slideshow></Slideshow>
             <div className="saludo">
                 <img className="icon-asesor" src={Asesora} alt="Icono de asesora"></img>
-                <h2>Hola tu asesora es Mayra!</h2>
+                <h3>Hola tu asesora es Mayra!</h3>
             </div>
             <div className="slide-group">
                 <h2>Catálogo campaña 17</h2>

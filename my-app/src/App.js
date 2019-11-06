@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Router, Switch, Route, Link } from 'react-router-dom';
 import { Home } from './components/home';
 import { Products } from './components/products';
 // import { Header } from './components/header';
@@ -44,7 +44,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <BrowserRouter>
       <div>
         <header>
           <div className="center">
@@ -106,7 +106,7 @@ function App() {
         </Switch>
       </div>
 
-    </Router>
+    </BrowserRouter>
   )
 }
 

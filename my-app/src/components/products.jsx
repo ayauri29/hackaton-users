@@ -4,7 +4,7 @@ import Perfume from '../icons/perfume.svg';
 import Accesorio from '../icons/accesorios.svg'
 import Body from '../icons/body.svg'
 import Maquillaje from '../icons/maquillaje.svg'
-import Cuidado from '../icons/cuidado personal.svg'
+import Cuidado from '../icons/cuidadopersonal.svg'
 
 export const Products = ({ addProductAtOrder }) => {
   const [products, setProducts] = useState([]);

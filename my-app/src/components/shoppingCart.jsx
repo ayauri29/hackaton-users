@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
-import React, { Link } from "react";
+import React from "react";
+import { Link } from 'react-router-dom'
 import firebase from "firebase/app";
 import { Stripe } from "../components/stripe";
 import "firebase/firestore";
@@ -46,64 +47,71 @@ export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
               return (
                 <div key={product.id} className="pedidos">
                   <img className="img-order" src={product.img} alt="imagen del producto" />
+
                   <div className="second">
                     <p className="fontp">{product.categoria}</p>
                     <p>{product.producto}</p>
                     <p className="fontp">Precio: S/.{product.precio}
                     </p>
-                    <p>
-                      <i
-                        className="fa fa-trash"
-                        aria-hidden="true"
-                        onClick={() => {
-                          deleteRow(product);
-                        }}
-                      />
-                    </p>
+                    <p>Cantidad </p>
+                    <input className="tres"
+                      type="number"
+                      min="1"
+                      max="100"
+                      defaultValue={product.cantidad}
+                      onClick={e => {
+                        const p = e.target.value;
+                        cantidad(product.id, p);
+                      }}
+                    />
                   </div>
-                  <input className="tres"
-                    type="number"
-                    min="1"
-                    max="100"
-                    defaultValue={product.cantidad}
-                    onClick={e => {
-                      const p = e.target.value;
-                      cantidad(product.id, p);
-                    }}
-                  />
+
+                  <p>
+                    <i
+                      className="fa fa-trash"
+                      aria-hidden="true"
+                      onClick={() => {
+                        deleteRow(product);
+                      }}
+                    />
+                  </p>
                 </div>
               )
             } else {
               return (
                 <div key={product.id} className="pedidos">
                   <img className="img-order" src={product.img} alt="imagen del producto" />
+
                   <div className="second">
+
                     <p className="fontp">{product.categoria}</p>
-                    <p>{product.producto}</p>
+                    <p className="bold">{product.producto}</p>
                     <p className="fontp">Precio: S/.{product.precio}</p>
                     <p className="fontDesc">Descuento: S/.{product.descuento}</p>
                     <p className="fontp2">Precio final: S/.{product.precio_oferta}</p>
                     {/* <p>S/.{parseFloat(product.precio_oferta) * product.cantidad}</p> */}
-                    <p>
-                      <i
-                        className="fa fa-trash"
-                        aria-hidden="true"
-                        onClick={() => {
-                          deleteRow(product);
-                        }}
-                      />
-                    </p>
+                    <label>Cantidad</label>
+                    <input className="tres"
+                      type="number"
+                      min="1"
+                      max="100"
+                      defaultValue={product.cantidad}
+                      onClick={e => {
+                        const p = e.target.value;
+                        cantidad(product.id, p);
+                      }}
+                    />
                   </div>
-                  <input className="tres"
-                    type="number"
-                    min="1"
-                    max="100"
-                    defaultValue={product.cantidad}
-                    onClick={e => {
-                      const p = e.target.value;
-                      cantidad(product.id, p);
-                    }}
-                  />
+
+                  <p className="size">
+                    <i
+                      className="fa fa-trash"
+                      aria-hidden="true"
+                      onClick={() => {
+                        deleteRow(product);
+                      }}
+                    />
+                  </p>
                 </div>
               )
             }
@@ -111,11 +119,12 @@ export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
           })}
         </div>
       </div>
-      <p className="Total">
+      <p className="total">
         Total = S/.
         {total()}
       </p>
-      
+
+
       <button type="button"
         className="button-pay"
         onClick={() => {
@@ -123,6 +132,7 @@ export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
             addOrder(products, new Date(), 'pendiente', total())
               .then(() => {
                 order([]);
+
               });
           }
 

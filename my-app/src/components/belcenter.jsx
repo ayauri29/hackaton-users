@@ -27,7 +27,7 @@ export const Belcenter = () => {
 
         return (
           <div key={center.id} className="product-div">
-            <p>{center.name}</p>
+            <p className="bold">{center.name}</p>
             <p>{center.address}</p>
             <p><FaPhone size={18} color="Black" />  {center.phone1}</p>
             <p><FaPhone size={18} color="Black" />  {center.phone2}</p>
