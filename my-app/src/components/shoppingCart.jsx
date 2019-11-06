@@ -6,6 +6,8 @@ import "firebase/firestore";
 // import {Pay} from './pay';
 import "../App.css";
 import Car from '../icons/car.png'
+import Pin from '../icons/pin.png'
+import Group from '../icons/Group.png'
 
 
 export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
@@ -113,10 +115,8 @@ export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
         Total = S/.
         {total()}
       </p>
-      {/* <Stripe></Stripe> */}
-      <button
-        type="button"
-        className="Send"
+      <button type="button"
+        className="button-pay"
         onClick={() => {
           if (!disableSubmitButton) {
             addOrder(products, new Date(), 'pendiente', total())
@@ -126,31 +126,56 @@ export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
           }
 
         }}
-        disabled={disableSubmitButton}
-      >
-        Carrito de compras
-      </button>
-      <button>
-        <div>
-          <h2>Comprar online</h2>
-          <p>Los productos te llegan a la dirección que elijas</p>
+        disabled={disableSubmitButton}>
+        <div  className="flex-class">
+          <img className="img-size" src={Pin} alt="Icono car shop"></img>
+          <div className="color-letter">
+            <h3>Comprar online</h3>
+            <p>Los productos te llegan a la dirección que elijas</p>
+          </div>
         </div>
       </button>
-      <button>
-        <div>
-          <img src={Car} alt="Icono car shop"></img>
-          <div>
-            <h2>Tiendas BELCORP</h2>
+      <button type="button"
+        className="button-pay"
+        onClick={() => {
+          if (!disableSubmitButton) {
+            addOrder(products, new Date(), 'pendiente', total())
+              .then(() => {
+                order([]);
+              });
+          }
+
+        }}
+        disabled={disableSubmitButton}>
+        <div  className="flex-class">
+          <img className="img-size" src={Car} alt="Icono car shop"></img>
+          <div className="color-letter">
+            <h3>Tiendas BELCORP</h3>
             <p>Elije los productos, retira y paga en cualquier tienda.</p>
           </div>
         </div>
       </button>
-      <button>
-        <div>
-          <h2>Consultora</h2>
-          <p>Elije los productos y una consultoras te lo entregará.</p>
+      <button type="button"
+        className="button-pay"
+        onClick={() => {
+          if (!disableSubmitButton) {
+            addOrder(products, new Date(), 'pendiente', total())
+              .then(() => {
+                order([]);
+              });
+          }
+
+        }}
+        disabled={disableSubmitButton}>
+        <div className="flex-class">
+          <img className="img-size" src={Group} alt="Icono car shop"></img>
+          <div className="color-letter">
+            <h3>Consultora</h3>
+            <p>Elije los productos y una consultoras te lo entregará.</p>
+          </div>
         </div>
       </button>
+      <Stripe></Stripe>
     </div>
   );
 };
