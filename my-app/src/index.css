@@ -220,6 +220,9 @@ h2{
   font-size: 18px;
     font-weight: bold;
 }
+.flex{
+  display: flex;
+}
 @media screen and (min-width: 764px) {
   .each-slide > div {
     height: 300px;

@@ -1,12 +1,11 @@
 /* eslint-disable no-unused-vars */
-import React, {Link} from "react";
+import React, { Link } from "react";
 import firebase from "firebase/app";
 import { Stripe } from "../components/stripe";
 import "firebase/firestore";
 // import {Pay} from './pay';
 import "../App.css";
-import {Payment} from '../components/payments';
-
+import Car from '../icons/car.png'
 
 
 export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
@@ -30,7 +29,7 @@ export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
       });
 
   const validateOrder = () => {
-     return products.length > 0;
+    return products.length > 0;
   };
 
   const disableSubmitButton = !validateOrder();
@@ -118,7 +117,7 @@ export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
       <button
         type="button"
         className="Send"
-        onClick={ () => {
+        onClick={() => {
           if (!disableSubmitButton) {
             addOrder(products, new Date(), 'pendiente', total())
               .then(() => {
@@ -130,6 +129,27 @@ export const AddOrder = ({ products, cantidad, total, deleteRow, order }) => {
         disabled={disableSubmitButton}
       >
         Carrito de compras
+      </button>
+      <button>
+        <div>
+          <h2>Comprar online</h2>
+          <p>Los productos te llegan a la dirección que elijas</p>
+        </div>
+      </button>
+      <button>
+        <div>
+          <img src={Car} alt="Icono car shop"></img>
+          <div>
+            <h2>Tiendas BELCORP</h2>
+            <p>Elije los productos, retira y paga en cualquier tienda.</p>
+          </div>
+        </div>
+      </button>
+      <button>
+        <div>
+          <h2>Consultora</h2>
+          <p>Elije los productos y una consultoras te lo entregará.</p>
+        </div>
       </button>
     </div>
   );
