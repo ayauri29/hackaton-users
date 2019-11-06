@@ -24,18 +24,18 @@ export const SlideCampania = () => {
         <Slide {...properties}>
           <div className="each-slide-camp">
             <div style={{'backgroundImage': `url(${slideImages[0]})`}}></div>
-            <p>COSMÉTICOS</p>
-            <p>Polvos compactos</p>
+            <p className="p-center">COSMÉTICOS</p>
+            <p className="p-center">Polvos compactos</p>
           </div>
           <div className="each-slide-camp">
             <div style={{'backgroundImage': `url(${slideImages[1]})`}}></div>
-            <p>FRAGANCIAS</p>
-            <p>Polvos compactos</p>
+            <p className="p-center">FRAGANCIAS</p>
+            <p className="p-center">Polvos compactos</p>
           </div>
           <div className="each-slide-camp">
             <div style={{'backgroundImage': `url(${slideImages[2]})`}}></div>
-            <p>FRAGANCIAS</p>
-            <p>Polvos compactos</p>
+            <p className="p-center">FRAGANCIAS</p>
+            <p className="p-center">Polvos compactos</p>
           </div>
         </Slide>
       </div>

@@ -10,6 +10,12 @@ html, body {
 #root{
   height: 100%;
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -52,6 +58,10 @@ li a:hover {
     letter-spacing: 1px;
     line-height: inherit;
     border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    margin: 8%
 }
 header{
   height: 15%;
@@ -125,11 +135,23 @@ h3 {
   color: red;
 }
 .saludo{
-  display: flex;
   align-items: center;
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
 }
 .icon-asesor{
-  height: 80px;
+  height: 40px;
+}
+h2{
+  font-size: 20px;
+  text-align: center;
+}
+.p-center{
+  text-align: center;
+}
+.img-order{
+  height: 50px;
 }
 @media screen and (min-width: 764px) {
   .each-slide > div {

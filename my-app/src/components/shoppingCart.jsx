@@ -57,6 +57,7 @@ export const AddOrder = ({
           <tr>
             <td>CANT.</td>
             <td>DESCRIPCIÓN</td>
+            <td>IMAGEN</td>
             <td>PU</td>
             <td>SUBTOTAL</td>
             <td>BORRAR</td>
@@ -77,6 +78,7 @@ export const AddOrder = ({
                   }}
                 />
               </td>
+              <td><img className="img-order" src={product.img} alt="imagen del producto"/></td>
               <td>{product.nombre}</td>
               <td>
                 S/.
@@ -105,7 +107,6 @@ export const AddOrder = ({
         {total()}
       </p>
       <Stripe></Stripe>
-      <Pay></Pay>
       {/* <button
         type="button"
         className="Send"
