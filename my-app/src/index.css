@@ -303,7 +303,7 @@ h2 {
 	.product-div {
 		width: 20%;
 	}
-	.div-video{{
+	.div-video{
 		flex-direction: row;
-	}}
+	}
 }
