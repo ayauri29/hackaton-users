@@ -1,30 +1,31 @@
 {
   "files": {
-    "main.css": "/hackaton-users/static/css/main.9ace7fc1.chunk.css",
-    "main.js": "/hackaton-users/static/js/main.01378955.chunk.js",
-    "main.js.map": "/hackaton-users/static/js/main.01378955.chunk.js.map",
+    "main.css": "/hackaton-users/static/css/main.10144e95.chunk.css",
+    "main.js": "/hackaton-users/static/js/main.e81ffb07.chunk.js",
+    "main.js.map": "/hackaton-users/static/js/main.e81ffb07.chunk.js.map",
     "runtime-main.js": "/hackaton-users/static/js/runtime-main.ce75b071.js",
     "runtime-main.js.map": "/hackaton-users/static/js/runtime-main.ce75b071.js.map",
-    "static/css/2.55521911.chunk.css": "/hackaton-users/static/css/2.55521911.chunk.css",
-    "static/js/2.e3d0e71f.chunk.js": "/hackaton-users/static/js/2.e3d0e71f.chunk.js",
-    "static/js/2.e3d0e71f.chunk.js.map": "/hackaton-users/static/js/2.e3d0e71f.chunk.js.map",
+    "static/css/2.d9fb4328.chunk.css": "/hackaton-users/static/css/2.d9fb4328.chunk.css",
+    "static/js/2.adc6cefc.chunk.js": "/hackaton-users/static/js/2.adc6cefc.chunk.js",
+    "static/js/2.adc6cefc.chunk.js.map": "/hackaton-users/static/js/2.adc6cefc.chunk.js.map",
     "index.html": "/hackaton-users/index.html",
-    "precache-manifest.f40febabad1d1f7a98756f43ec919bb8.js": "/hackaton-users/precache-manifest.f40febabad1d1f7a98756f43ec919bb8.js",
+    "precache-manifest.4d8f93d847d5fc63dbf714c86b1bb317.js": "/hackaton-users/precache-manifest.4d8f93d847d5fc63dbf714c86b1bb317.js",
     "service-worker.js": "/hackaton-users/service-worker.js",
-    "static/css/2.55521911.chunk.css.map": "/hackaton-users/static/css/2.55521911.chunk.css.map",
-    "static/css/main.9ace7fc1.chunk.css.map": "/hackaton-users/static/css/main.9ace7fc1.chunk.css.map",
+    "static/css/2.d9fb4328.chunk.css.map": "/hackaton-users/static/css/2.d9fb4328.chunk.css.map",
+    "static/css/main.10144e95.chunk.css.map": "/hackaton-users/static/css/main.10144e95.chunk.css.map",
     "static/media/accesorios.svg": "/hackaton-users/static/media/accesorios.7a533aca.svg",
     "static/media/asesora.svg": "/hackaton-users/static/media/asesora.947c705e.svg",
     "static/media/body.svg": "/hackaton-users/static/media/body.d0baa9fd.svg",
     "static/media/cuidadopersonal.svg": "/hackaton-users/static/media/cuidadopersonal.bbb6b57d.svg",
     "static/media/maquillaje.svg": "/hackaton-users/static/media/maquillaje.24c382a5.svg",
-    "static/media/perfume.svg": "/hackaton-users/static/media/perfume.d88c5dd7.svg"
+    "static/media/perfume.svg": "/hackaton-users/static/media/perfume.d88c5dd7.svg",
+    "static/media/styles.css": "/hackaton-users/static/media/revicons.2feb69cc.eot"
   },
   "entrypoints": [
     "static/js/runtime-main.ce75b071.js",
-    "static/css/2.55521911.chunk.css",
-    "static/js/2.e3d0e71f.chunk.js",
-    "static/css/main.9ace7fc1.chunk.css",
-    "static/js/main.01378955.chunk.js"
+    "static/css/2.d9fb4328.chunk.css",
+    "static/js/2.adc6cefc.chunk.js",
+    "static/css/main.10144e95.chunk.css",
+    "static/js/main.e81ffb07.chunk.js"
   ]
 }
