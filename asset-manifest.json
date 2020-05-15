@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/hackaton-users/static/css/main.10144e95.chunk.css",
-    "main.js": "/hackaton-users/static/js/main.4cc3f7e5.chunk.js",
-    "main.js.map": "/hackaton-users/static/js/main.4cc3f7e5.chunk.js.map",
+    "main.js": "/hackaton-users/static/js/main.fd23a08d.chunk.js",
+    "main.js.map": "/hackaton-users/static/js/main.fd23a08d.chunk.js.map",
     "runtime-main.js": "/hackaton-users/static/js/runtime-main.ce75b071.js",
     "runtime-main.js.map": "/hackaton-users/static/js/runtime-main.ce75b071.js.map",
     "static/css/2.97953f1a.chunk.css": "/hackaton-users/static/css/2.97953f1a.chunk.css",
     "static/js/2.1a7e53b5.chunk.js": "/hackaton-users/static/js/2.1a7e53b5.chunk.js",
     "static/js/2.1a7e53b5.chunk.js.map": "/hackaton-users/static/js/2.1a7e53b5.chunk.js.map",
     "index.html": "/hackaton-users/index.html",
-    "precache-manifest.8445fe9242f352f733d6999513700014.js": "/hackaton-users/precache-manifest.8445fe9242f352f733d6999513700014.js",
+    "precache-manifest.607694ad615a22f0883c2aed65cb1d9f.js": "/hackaton-users/precache-manifest.607694ad615a22f0883c2aed65cb1d9f.js",
     "service-worker.js": "/hackaton-users/service-worker.js",
     "static/css/2.97953f1a.chunk.css.map": "/hackaton-users/static/css/2.97953f1a.chunk.css.map",
     "static/css/main.10144e95.chunk.css.map": "/hackaton-users/static/css/main.10144e95.chunk.css.map",
@@ -26,6 +26,6 @@
     "static/css/2.97953f1a.chunk.css",
     "static/js/2.1a7e53b5.chunk.js",
     "static/css/main.10144e95.chunk.css",
-    "static/js/main.4cc3f7e5.chunk.js"
+    "static/js/main.fd23a08d.chunk.js"
   ]
 }
